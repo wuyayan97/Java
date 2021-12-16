@@ -25,6 +25,10 @@ public class VariableDifference {
 
         int[] arr = {5,15,20,25};
         System.out.println(getMax(arr));
+
+        This toThis = new This();
+        toThis.name = "myName";
+        toThis.sayHello("youName");
     }
 
     private static int getMax(int[] arr){
