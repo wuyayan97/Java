@@ -11,4 +11,28 @@ public class Person {
     public void showName(){
         System.out.println(this.name);
     }
+
+    private String age;
+    private String toYum;
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getToYum() {
+        return toYum;
+    }
+
+    public void setToYum(String toYum) {
+        this.toYum = toYum;
+    }
+
+    public Person(String age, String toYum) {
+        this.age = age;
+        this.toYum = toYum;
+    }
 }
