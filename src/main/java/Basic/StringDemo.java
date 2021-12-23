@@ -1,5 +1,8 @@
 package Basic;
 
+
+import java.util.Scanner;
+
 /**
  * @Author : wuyayan
  * @Date : Created in 21:19 2021/12/22
@@ -80,5 +83,35 @@ public class StringDemo {
         for (int i = 0; i < split1.length; i++) {
             System.out.println(split1[i]);
         }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入字符串");
+        String input = scanner.next();
+
+        int countUpper = 0;
+        int countLower = 0;
+        int countNumber = 0;
+        int countOther = 0;
+
+        char[] chars2 = input.toCharArray();
+        for (int i = 0; i < chars2.length; i++) {
+            if('A' <= chars2[i] && 'Z' >= chars2[i]){
+                countUpper++;
+            }else if('a' <= chars2[i] && 'z' >= chars2[i]){
+                countLower++;
+            }else if('0' <= chars2[i] && '9' >= chars2[i]){
+                countNumber++;
+            }else {
+                countOther++;
+            }
+        }
+        System.out.println("大写字母：" +countUpper);
+        System.out.println("小写字母：" +countLower);
+        System.out.println("数字：" +countNumber);
+        System.out.println("其他：" +countOther);
+
+
+
+
     }
 }
