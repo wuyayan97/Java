@@ -33,12 +33,10 @@ public class StaticFieldClass {
         Arrays.sort(chars);
 
         System.out.println(chars);
-        
+
         for (int length = chars.length; length > 0; length--) {
             System.out.println(chars[length-1]);
         }
-
-
 
     }
 
