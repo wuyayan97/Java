@@ -17,4 +17,12 @@ public class ParentClass {
         System.out.println(num);
     }
 
+    public void methodParent(){
+        System.out.println("父类执行");
+    }
+
+    public void methodClone(){
+        System.out.println("父类方法重名！");
+    }
+
 }

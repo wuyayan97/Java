@@ -30,5 +30,15 @@ public class InheritanceDemo {
         childrenClass.methodC();//20
         //这个方法是在父类中定义的。
         childrenClass.methodP();//10
+
+        System.out.println("===============================================");
+
+        /**
+         * 方法继承也是从子类向上找父类，绝不会向下找子类。
+         */
+        //创建的是谁，就优先用谁
+        childrenClass.methodClone();//子类方法重名
+
+
     }
 }
